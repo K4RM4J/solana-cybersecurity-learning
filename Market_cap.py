@@ -1,13 +1,10 @@
 
-# Mi primer programa de análisis de criptomonedas
+print("=== CALCULADORA DE MARKET CAP ===")
 
-print("Calculadora de Market Cap")
+precio = float(input("Precio del token en USD: "))
+tokens = float(input("Tokens en circulacion: "))
 
-precio = 0.50
-tokens_circulacion = 1000000
+market_cap = precio * tokens
 
-market_cap = precio * tokens_circulacion
-
-print("Precio por token: $", precio)
-print("Tokens en circulación:", tokens_circulacion)
-print("Market Cap: $", market_cap)
+print("----------------------------")
+print(f"Market Cap: ${market_cap:,.2f}")
